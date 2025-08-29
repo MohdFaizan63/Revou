@@ -279,3 +279,8 @@ process.on('SIGINT', () => {
     process.exit(0);
   });
 });
+
+
+app.get('/', (req, res) => {
+  res.send('Revuo backend is running! 🚀');
+});
